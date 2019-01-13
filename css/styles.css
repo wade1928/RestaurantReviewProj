@@ -286,3 +286,7 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+.leaflet-container a {
+  color: #0033F8;
+}
