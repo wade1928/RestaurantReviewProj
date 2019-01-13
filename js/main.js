@@ -4,6 +4,8 @@ let restaurants,
 var newMap
 var markers = []
 
+
+
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw/index.js', {scope: '/sw/'})
   .then(function(reg) {
@@ -202,7 +204,6 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map
     const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.newMap);
-    marker.alt = 'Map Marker for ' + restaurant.name;
     marker.on("click", onClick);
     function onClick() {
       window.location.href = marker.options.url;
