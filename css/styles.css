@@ -55,7 +55,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   font-size: 8pt;
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 25px;
+  padding: 25px 0px 25px 0px;
   text-align: center;
   text-transform: uppercase;
   margin-top: 5px;
@@ -265,7 +265,7 @@ nav h1 a {
   margin: 0 auto;
 }
 #reviews-container {
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
   width: 100%;
   margin: 0 auto;
 }
