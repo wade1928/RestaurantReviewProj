@@ -3,9 +3,11 @@ self.addEventListener('install', function(event) {
 		caches.open('stuff').then(function(cache) {
 			return cache.addAll([
 				'/',
-				'/img/',
 				'/index.html',
-				'/css/styles.css'
+				'/restaurant.html',
+				'/img/',
+				'/css/styles.css',
+				
 
 			]);
 		})
